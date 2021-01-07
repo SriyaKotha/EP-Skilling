@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Students xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="Student.xsd">	
+	
+	<student id="a">
+		<regno>001</regno>
+		<name>Sriya</name>
+		<email>sri@gmail.com</email>
+		<marks>99.0</marks>
+		<class>2A</class>
+	</student>
+	
+	<student id="b">
+		<regno>002</regno>
+		<name>Monaa</name>
+		<email>mon@gmail.com</email>
+		<marks>93.0</marks>
+		<class>2B</class>
+	</student>
+	
+	<student id="c">
+		<regno>003</regno>
+		<name>Lahari</name>
+		<email>lah@gmail.com</email>
+		<marks>96.0</marks>
+		<class>2A</class>
+	</student>
+	
+	<student id="d">
+		<regno>004</regno>
+		<name>Priya</name>
+		<email>pri@gmail.com</email>
+		<marks>95.0</marks>
+		<class>2C</class>
+	</student>
+	
+	<student id="e">
+		<regno>005</regno>
+		<name>Nishi</name>
+		<email>nis@gmail.com</email>
+		<marks>92.0</marks>
+		<class>2B</class>
+	</student>
+</Students>
