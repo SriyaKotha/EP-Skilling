@@ -1,0 +1,17 @@
+CREATE TABLE employee(name varchar(20),emp_id int primary key,age int,dept varchar(20),dob date ,salary int, designation varchar(20));
+
+desc employee;
+insert into employee value ('A',101,29,'CSE','1990-10-20',31000,'HOD');
+insert into employee value ('B',102,30,'ECE','1989-01-10',25000,'Professor');
+insert into employee value ('C',103,26,'CSE','1995-08-2',33000,'Asst Professor');
+insert into employee value ('D',104,22,'CSE','1999-06-25',27000,'Asst Proffesor');
+insert into employee value ('E',105,33,'ECE','1987-12-14',28000,'HOD');
+insert into employee value ('F',106,30,'EEE','1989-02-14',33000,'Professor');
+select * from employee;
+
+DELETE FROM employee WHERE emp_id=105;
+select * from employee;
+
+UPDATE employee SET dept='PAM dept',designation='Senior Manager' WHERE emp_id=105;
+select * from employee;
+
