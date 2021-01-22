@@ -14,4 +14,3 @@ select * from employee;
 
 UPDATE employee SET dept = 'ECE', designation = 'Proffesor' WHERE emp_id = 105;
 select * from employee;
-
