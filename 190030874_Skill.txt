@@ -12,6 +12,6 @@ select * from employee;
 DELETE FROM employee WHERE emp_id=105;
 select * from employee;
 
-UPDATE employee SET dept='PAM dept',designation='Senior Manager' WHERE emp_id=105;
+UPDATE employee SET dept = 'ECE', designation = 'Proffesor' WHERE emp_id = 105;
 select * from employee;
 
