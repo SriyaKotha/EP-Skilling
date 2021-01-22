@@ -1,0 +1,68 @@
+<html>
+<script>
+function validation() {
+	var name = document.f1.StdName.value;
+	var regno = document.f1.regno.value;
+	var email = document.f1.emailid.value;
+	if (name == null || name == "") 
+	{
+		alert("Please enter an Name");
+	}
+	else if (regno == null || regno == "") 
+	{
+		alert("Please enter an Registration Num");
+	}
+	else if (email == null || email == "") 
+	{
+		alert("Please enter an Email");
+	}
+	else if (name.length < 8) 
+	{
+		alert("Name should have minimum of 8 characters");
+	}
+	else if(email.length < 10)
+	{
+		alert("Email should have minimum of 10 characters");
+	}
+	else if(!email.includes("@") || !email.includes("."))
+	{
+		alert("Invalid Email id must contain @ and .")
+	}
+	else if(regno <= 190000000 && regno >= 200000000)
+	{
+		alert("Regno starts with 190000000 and ends with 200000000")
+	}
+	else
+	{
+		alert("Welcome "+name)
+	}
+}
+</script>
+
+<head>
+<link rel="stylesheet" type="text/css" href="reg_form.css">
+</head>
+<title>Demo Page</title>
+<body >
+<form method="post" onSubmit="validation()" name="f1">
+<div class="a">
+<h2>Registration form</h2>
+</div>
+<table align="center">
+<tr><td><h1>Student Name:</h1></td><td><input type="text" name="StdName" placeholder="Enter Student Name"><br></td></tr>
+<tr><td><h1>Registration No:</h1></td><td><input type="text" name="regno" placeholder="Enter Registration Number"><br></td></tr>
+<tr><td><h1>Email ID:</h1></td><td><input type="text" name="emailid" placeholder="Enter Email Id"><br></td></tr>
+<tr><td><h1>Favourite Game:</h1></td><td><h1 class="a"><input type="checkbox">Cricket<input type="checkbox">FootBall<input type="checkbox">Chess<input type="checkbox">Throw Ball</h1></td></tr>
+<tr><td><h1>Gender:</h1></td><td><h1 class="a"><input type="radio" name="gender"> Male<input type="radio" name="gender"> Female</h1></td></tr>
+<tr><td><h1>Favourite Subjects:</h1></td><td><select name="subj">
+  <option value="java">Java</option>
+  <option value="C">C</option>
+  <option value="C++">C++</option>
+  <option value="Python">Python</option>
+</select><br></td></tr>
+<tr><td><h1>Address:</h1></td><td><textarea name="address"  placeholder="100-150 words" "></textarea><br></td></tr>
+<tr><td><input type="submit" value="login" class="tab"></td></tr>
+</table>
+</form>
+</body>
+</html>
